@@ -60,11 +60,11 @@ Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hote
 ### Pipeline Flowchart
 ```mermaid
 graph LR;
-    Data Collection-->Data Preparation;
-    Data Preparation-->Model Training;
-    Model Training-->Model Ensembling;
-    Model Ensembling-->Controlled Ablations & Tuning;
-    Controlled Ablations & Tuning-->Mechanical Failure Analysis;
-    Mechanical Failure Analysis-->Decision Making;
+    A[Data Collection] --> B[Data Preparation]
+    B --> C[Model Training]
+    C --> D[Model Ensembling]
+    D --> E[Controlled Ablations & Tuning]
+    E --> F[Mechanical Failure Analysis]
+    F --> G[Decision Making]
 ```
 
