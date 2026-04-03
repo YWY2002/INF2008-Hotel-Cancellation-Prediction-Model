@@ -1,6 +1,7 @@
 # Stage 2 
 
 ### Data Description
+
 | Variable                    | Type        | Description                                                                                                                                                                                                                                                              |
 |-----------------------------|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |             ADR             | Numeric     | Average   Daily Rate                                                                                                                                                                                                                                                     |
@@ -44,8 +45,6 @@
 |                             |             | No-Show – customer did not check-in and did inform the hotel of the reason why                                                                                                                                                                                           |
 |    ReservationStatusDate    | Date        | Date at which the last status was set. This variable can be used in conjunction with the ReservationStatus to understand   when was the booking canceled or when did the customer checked-out of the   hotel                                                             |
 |       ReservedRoomType      | Categorical | Code of room type reserved. Code is presented instead of designation for anonymity reasons                                                                                                                                                                               |
-
-
 |     StaysInWeekendNights    | Integer     | Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel                                                                                                                                                                            |
 |      StaysInWeekNights      | Integer     | Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel                                                                                                                                                                                 |
 |    TotalOfSpecialRequests   | Integer     | Number of special requests made by the customer (e.g. twin bed or high floor)                                                                                                                                                                                            |
