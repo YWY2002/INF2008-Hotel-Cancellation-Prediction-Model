@@ -1,5 +1,12 @@
 # Stage 2 
 
+**Goal:** Develop a prediction model to reduce the cost and expense incurred by a hotel when customers cancel their bookings.
+
+**Model used:** Logistic Regression, Random Forest, Histogram-based Gradient Boosting Classification Tree
+
+### Get Started
+All libraries required to run the notebook are in requirement.txt. Go to the project directory, or create a virtual environment if desired and type `pip install -r requirement.txt` to install all required dependencies. Select the kernel on the notebook to run.
+
 ### Data Description
 
 | Variable                    | Type        | Description                                                                                                                                                                                                                                                              |
@@ -48,3 +55,16 @@
 |     StaysInWeekendNights    | Integer     | Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel                                                                                                                                                                            |
 |      StaysInWeekNights      | Integer     | Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel                                                                                                                                                                                 |
 |    TotalOfSpecialRequests   | Integer     | Number of special requests made by the customer (e.g. twin bed or high floor)                                                                                                                                                                                            |
+Dataset sourced from [Kaggle](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand?resource=download)
+
+### Pipeline Flowchart
+```mermaid
+graph LR;
+    Data Collection-->Data Preparation;
+    Data Preparation-->Model Training;
+    Model Training-->Model Ensembling;
+    Model Ensembling-->Controlled Ablations & Tuning;
+    Controlled Ablations & Tuning-->Mechanical Failure Analysis;
+    Mechanical Failure Analysis-->Decision Making;
+```
+
